@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class Section1Component {
 
+  MainHeading: string = 'Welcome to Our Website';
+  Subheading: string = 'Discover amazing things we can do for you!';
 }
