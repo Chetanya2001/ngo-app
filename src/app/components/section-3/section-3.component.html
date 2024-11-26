@@ -1,1 +1,11 @@
-<p>section-3 works!</p>
+<div class="what-we-do">
+    <h2 class="section-title">What We Do</h2>
+    <div class="card-container">
+      <div class="card" *ngFor ="let item of whatWeDo">
+        <img [src]="item.icon" [alt]="item.title" class="card-icon" />
+        <h3 class="card-title">{{ item.title }}</h3>
+        <div class="underline"></div>
+      </div>
+    </div>
+  </div>
+  

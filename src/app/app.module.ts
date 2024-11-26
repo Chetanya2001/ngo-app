@@ -12,26 +12,19 @@ import { FooterComponent } from './components/footer/footer.component'
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DonateComponent } from './components/common/donate/donate.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    NavbarComponent,
-    Section1Component,
-    Section2Component,
-    Section3Component,
-    Section4Component,
-    Section5Component,
-    Section6Component,
-    Section7Component,
-    Section8Component,
-    FooterComponent
-    
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule {}
