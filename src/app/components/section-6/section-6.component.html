@@ -1,1 +1,46 @@
-<p>section-6 works!</p>
+<div class="success-stories-slider">
+    <h2 class="text-center py-4">Stories & Updates</h2>
+    <div id="successStoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div
+          *ngFor="let story of stories; let i = index"
+          class="carousel-item"
+          [class.active]="i === 0"
+        >
+          <div class="row justify-content-center align-items-center">
+            <div
+              class="col-md-6 d-flex flex-column justify-content-center align-items-start px-5"
+              [style.background-color]="story.bgColor"
+            >
+              <h3>{{ story.title }}</h3>
+              <p>{{ story.description }}</p>
+              <button class="btn btn-warning text-white">{{ story.buttonText }}</button>
+            </div>
+            <div class="col-md-6">
+              <img [src]="story.image" class="img-fluid" [alt]="story.title" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#successStoriesCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#successStoriesCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
