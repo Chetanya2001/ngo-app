@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { DonateComponent } from "../common/donate/donate.component";
 
 @Component({
   selector: 'app-section-3',
-  imports: [CommonModule],
+  imports: [CommonModule, DonateComponent],
   templateUrl: './section-3.component.html',
   styleUrl: './section-3.component.css'
 })

@@ -8,24 +8,27 @@ import { Component } from '@angular/core';
   styleUrl: './section-8.component.css'
 })
 export class Section8Component {
-  achievements = [
+  awards = [
     {
-      title: 'Employee of the Year',
-      description: 'Awarded for outstanding performance in 2023.',
-      image: 'assets/award1.jpg',
-      link: '#'
+      image: 'https://via.placeholder.com/100',
+      title: 'Best NGO of the Year',
+      year: '2022',
+      description:
+        'Recognized for exceptional contribution to rural education and sustainability.'
     },
     {
-      title: 'Best Startup',
-      description: 'Recognized as the best startup of the year in the tech industry.',
-      image: 'assets/award2.jpg',
-      link: '#'
+      image: 'https://via.placeholder.com/100',
+      title: 'Environmental Excellence Award',
+      year: '2021',
+      description:
+        'Awarded for outstanding efforts in reforestation and wildlife preservation.'
     },
     {
-      title: 'Innovative Project',
-      description: 'Awarded for a groundbreaking project that changed the industry.',
-      image: 'assets/award3.jpg',
-      link: '#'
+      image: 'https://via.placeholder.com/100',
+      title: 'Social Impact Leader',
+      year: '2020',
+      description:
+        'Celebrated for empowering women through vocational training programs.'
     }
   ];
 }

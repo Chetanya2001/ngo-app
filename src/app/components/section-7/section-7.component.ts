@@ -10,22 +10,22 @@ import { Component } from '@angular/core';
 export class Section7Component {
   testimonials = [
     {
-      image: 'assets/client1.jpg',
-      text: '"This service has completely changed the way we do business. Highly recommend!"',
-      name: 'John Doe',
-      role: 'CEO, Company X'
+      image: 'https://via.placeholder.com/100',
+      text: 'Thanks to this NGO, my children now have access to quality education. It has changed their future.',
+      name: 'Priya Sharma',
+      role: 'Beneficiary'
     },
     {
-      image: 'assets/client2.jpg',
-      text: '"A fantastic experience! Professional and reliable every time."',
-      name: 'Jane Smith',
-      role: 'Marketing Director, Company Y'
+      image: 'https://via.placeholder.com/100',
+      text: 'Their afforestation program is a fantastic initiative for sustainability. Highly recommend supporting them!',
+      name: 'Rohit Singh',
+      role: 'Environmentalist'
     },
     {
-      image: 'assets/client3.jpg',
-      text: '"We have seen a tremendous improvement in efficiency since working with this team."',
-      name: 'Alice Johnson',
-      role: 'Project Manager, Company Z'
+      image: 'https://via.placeholder.com/100',
+      text: 'The vocational training programs are empowering women in rural areas. Proud to be associated!',
+      name: 'Neha Verma',
+      role: 'Social Activist'
     }
   ];
 }

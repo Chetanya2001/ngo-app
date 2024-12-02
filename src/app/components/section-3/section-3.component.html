@@ -1,11 +1,27 @@
-<div class="what-we-do">
-    <h2 class="section-title">What We Do</h2>
-    <div class="card-container">
-      <div class="card" *ngFor ="let item of whatWeDo">
-        <img [src]="item.icon" [alt]="item.title" class="card-icon" />
-        <h3 class="card-title">{{ item.title }}</h3>
-        <div class="underline"></div>
+<section class="what-we-do-section container text-center mt-5">
+  <h2 class="section-title mb-4">What We Do</h2>
+
+  <!-- Main Card -->
+  <div class="card-container">
+    <div class="card shadow-lg">
+      <img
+        src="https://via.placeholder.com/400x200"
+        class="card-img rounded-top"
+        alt="Child Education"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Child Education</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          tincidunt commodo lacus.
+        </p>
+        <app-donate></app-donate>
       </div>
     </div>
   </div>
-  
+
+  <!-- Background Layers -->
+  <div class="background-layer-left"></div>
+  <div class="background-layer-right"></div>
+</section>
+

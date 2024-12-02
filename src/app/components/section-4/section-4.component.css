@@ -1,5 +1,113 @@
-p {
-    width : 100%;
-    height : 100px;
-    border : 2px solid black
-}
+/* Section Styling */
+.impact-tracker-section {
+    background-color: #fff6e8;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6c4e2f;
+    margin-bottom: 40px;
+  }
+  
+  /* Impact Card */
+  .impact-card {
+    background: linear-gradient(145deg, #fff, #f0e1cb);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+      -6px -6px 15px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .impact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3),
+      -8px -8px 20px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Icon Styling */
+  .impact-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Specific Icons */
+  .education {
+    background-image: url('https://via.placeholder.com/60x60');
+    background-color: #fdd835;
+  }
+  
+  .nature {
+    background-image: url('https://via.placeholder.com/60x60');
+    background-color: #66bb6a;
+  }
+  
+  .husbandry {
+    background-image: url('https://via.placeholder.com/60x60');
+    background-color: #ff7043;
+  }
+  
+  .vocational {
+    background-image: url('https://via.placeholder.com/60x60');
+    background-color: #42a5f5;
+  }
+  
+  /* Impact Title */
+  .impact-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c4e2f;
+    margin-bottom: 5px;
+  }
+  
+  /* Impact Count */
+  .impact-count {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c4e2f;
+  }
+  
+  /* Background Layer */
+  .impact-tracker-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: #d6a85d;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .impact-tracker-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background-color: #d6a85d;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  

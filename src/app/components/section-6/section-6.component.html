@@ -1,32 +1,106 @@
-<div class="success-stories-slider">
-    <h2 class="text-center py-4">Stories & Updates</h2>
-    <div id="successStoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+<section class="stories-updates-section py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <h2 class="section-title mb-4 text-center">Stories and Updates</h2>
+
+    <!-- Carousel -->
+    <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#storiesCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#storiesCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#storiesCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slides -->
       <div class="carousel-inner">
-        <div
-          *ngFor="let story of stories; let i = index"
-          class="carousel-item"
-          [class.active]="i === 0"
-        >
-          <div class="row justify-content-center align-items-center">
-            <div
-              class="col-md-6 d-flex flex-column justify-content-center align-items-start px-5"
-              [style.background-color]="story.bgColor"
-            >
-              <h3>{{ story.title }}</h3>
-              <p>{{ story.description }}</p>
-              <button class="btn btn-warning text-white">{{ story.buttonText }}</button>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="https://via.placeholder.com/600x400"
+                class="d-block w-100 rounded"
+                alt="Story 1"
+              />
             </div>
             <div class="col-md-6">
-              <img [src]="story.image" class="img-fluid" [alt]="story.title" />
+              <h3 class="story-title">Empowering Education in Rural Areas</h3>
+              <p class="story-text">
+                We recently launched an initiative to bring quality education to
+                remote villages. Over 200 children have now joined school for
+                the first time. Together, we’re breaking barriers and building
+                dreams!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="https://via.placeholder.com/600x400"
+                class="d-block w-100 rounded"
+                alt="Story 2"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3 class="story-title">Environmental Sustainability Programs</h3>
+              <p class="story-text">
+                Our recent afforestation drive planted over 10,000 trees across
+                arid regions, providing both shade and oxygen. Let's continue
+                protecting our planet for future generations!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="https://via.placeholder.com/600x400"
+                class="d-block w-100 rounded"
+                alt="Story 3"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3 class="story-title">Vocational Training for Women</h3>
+              <p class="story-text">
+                Through our vocational programs, over 500 women are now
+                financially independent, skilled in tailoring, handicrafts, and
+                more. Empower women, empower the world!
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Carousel Controls -->
+
+      <!-- Controls -->
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#successStoriesCarousel"
+        data-bs-target="#storiesCarousel"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -35,7 +109,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#successStoriesCarousel"
+        data-bs-target="#storiesCarousel"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -43,4 +117,4 @@
       </button>
     </div>
   </div>
-  
+</section>

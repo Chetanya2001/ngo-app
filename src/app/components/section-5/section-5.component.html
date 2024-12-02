@@ -1,9 +1,23 @@
-<div class="stats-container">
-    <div *ngFor="let stat of Stats" class="stat-item">
-      <img [src]="stat.icon" [alt]="stat.title" class="stat-icon" />
-      <h3 class="stat-title">{{ stat.title }}</h3>
-      <p class="stat-number">{{ stat.stat }}</p>
-      <p class="stat-description">{{ stat.description }}</p>
+<section class="contributors-section container text-center mt-5">
+  <h2 class="section-title mb-5">Hear From Our Biggest Contributors</h2>
+
+  <div class="contributor-card mx-auto">
+    <div class="contributor-image">
+      <img
+        src="https://via.placeholder.com/100"
+        alt="Contributor"
+        class="rounded-circle"
+      />
+    </div>
+    <div class="contributor-details">
+      <h4 class="contributor-name">Nitin Garg</h4>
+      <p class="contributor-role">Frontend Developer, Lifestyle</p>
+      <p class="contributor-message">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </div>
   </div>
+</section>
+
   

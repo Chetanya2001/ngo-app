@@ -1,37 +1,105 @@
-.stats-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .stat-item {
-    text-align: center;
-    max-width: 200px;
-    margin: 10px;
-  }
-  
-  .stat-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .stat-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .stat-number {
-    font-size: 24px;
-    color: #3498db;
-    margin: 5px 0;
-  }
-  
-  .stat-description {
-    font-size: 14px;
-    color: #7f8c8d;
-  }
-  
+/* Section Styling */
+.contributors-section {
+  background: linear-gradient(to bottom, #fff6e8, #fef2dd);
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6c4e2f;
+  margin-bottom: 40px;
+}
+
+/* Contributor Card */
+.contributor-card {
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contributor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contributor Image */
+.contributor-image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #ffffff, #f3ebe0);
+  border: 5px solid #fef2dd;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.contributor-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contributor Details */
+.contributor-details {
+  margin-top: 60px;
+}
+
+.contributor-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6c4e2f;
+}
+
+.contributor-role {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a67c52;
+  margin-bottom: 10px;
+}
+
+.contributor-message {
+  font-size: 14px;
+  color: #6c4e2f;
+  line-height: 1.5;
+}
+
+/* Background Decoration */
+.contributors-section::before,
+.contributors-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.contributors-section::before {
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 224, 189, 0.4);
+}
+
+.contributors-section::after {
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 224, 189, 0.4);
+}
