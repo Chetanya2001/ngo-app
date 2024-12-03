@@ -9,6 +9,4 @@ import { DonateComponent } from '../common/donate/donate.component';
 })
 export class Section1Component {
 
-  MainHeading: string = 'Welcome to Our Website';
-  Subheading: string = 'Discover amazing things we can do for you!';
 }

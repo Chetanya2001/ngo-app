@@ -4,93 +4,38 @@
     <h2 class="section-title mb-4 text-center">Stories and Updates</h2>
 
     <!-- Carousel -->
-    <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <!-- Indicators -->
       <div class="carousel-indicators">
         <button
+          *ngFor="let story of stories; let i = index"
           type="button"
-          data-bs-target="#storiesCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#storiesCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#storiesCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
+          [attr.data-bs-target]="'#storiesCarousel'"
+          [attr.data-bs-slide-to]="i"
+          [class.active]="i === 0"
+          [attr.aria-label]="'Slide ' + (i + 1)"
+          [attr.aria-current]="i === 0 ? 'true' : null"
         ></button>
       </div>
 
       <!-- Slides -->
       <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
+        <div
+          *ngFor="let story of stories; let i = index"
+          class="carousel-item"
+          [class.active]="i === 0"
+        >
           <div class="row align-items-center">
             <div class="col-md-6">
               <img
-                src="https://via.placeholder.com/600x400"
+                [src]="story.image"
                 class="d-block w-100 rounded"
-                alt="Story 1"
+                [alt]="story.title"
               />
             </div>
             <div class="col-md-6">
-              <h3 class="story-title">Empowering Education in Rural Areas</h3>
-              <p class="story-text">
-                We recently launched an initiative to bring quality education to
-                remote villages. Over 200 children have now joined school for
-                the first time. Together, we’re breaking barriers and building
-                dreams!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <img
-                src="https://via.placeholder.com/600x400"
-                class="d-block w-100 rounded"
-                alt="Story 2"
-              />
-            </div>
-            <div class="col-md-6">
-              <h3 class="story-title">Environmental Sustainability Programs</h3>
-              <p class="story-text">
-                Our recent afforestation drive planted over 10,000 trees across
-                arid regions, providing both shade and oxygen. Let's continue
-                protecting our planet for future generations!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <img
-                src="https://via.placeholder.com/600x400"
-                class="d-block w-100 rounded"
-                alt="Story 3"
-              />
-            </div>
-            <div class="col-md-6">
-              <h3 class="story-title">Vocational Training for Women</h3>
-              <p class="story-text">
-                Through our vocational programs, over 500 women are now
-                financially independent, skilled in tailoring, handicrafts, and
-                more. Empower women, empower the world!
-              </p>
+              <h3 class="story-title">{{ story.title }}</h3>
+              <p class="story-text">{{ story.text }}</p>
             </div>
           </div>
         </div>

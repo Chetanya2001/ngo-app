@@ -1,58 +1,18 @@
 <section class="field-of-work-section container text-center mt-5">
   <h2 class="section-title mb-4">Our Field Of Work</h2>
   <div class="row justify-content-center">
-    <!-- Card 1 -->
-    <div class="col-6 col-md-3 mb-4">
+    <div
+      class="col-6 col-md-3 mb-4"
+      *ngFor="let field of fieldsOfWork"
+    >
       <div class="card shadow border-0 h-100">
         <img
-          src="https://via.placeholder.com/150"
+          [src]="field.imgSrc"
           class="card-img-top rounded"
-          alt="Education"
+          [alt]="field.altText"
         />
         <div class="card-body">
-          <h5 class="card-title">Education</h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card shadow border-0 h-100">
-        <img
-          src="https://via.placeholder.com/150"
-          class="card-img-top rounded"
-          alt="Nature"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Nature</h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card shadow border-0 h-100">
-        <img
-          src="https://via.placeholder.com/150"
-          class="card-img-top rounded"
-          alt="Animal Husbandry"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Animal Husbandry</h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="col-6 col-md-3 mb-4">
-      <div class="card shadow border-0 h-100">
-        <img
-          src="https://via.placeholder.com/150"
-          class="card-img-top rounded"
-          alt="Vocational Training"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Vocational Training</h5>
+          <h5 class="card-title">{{ field.title }}</h5>
         </div>
       </div>
     </div>

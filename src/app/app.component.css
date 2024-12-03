@@ -1,7 +1,30 @@
-app-navbar {
-    margin-top: 30px;
-}
-div {
-    margin-top: 40px;
-}
-
+/* General Container Styling */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styling */
+  app-navbar {
+    margin-bottom: 20px; /* Space below the navbar */
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 4rem 1.5rem; /* Add generous padding */
+    margin: 2rem 0; /* Add spacing between sections */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Alternate Background Colors for Sections */
+  .section:nth-child(even) {
+    background-color: #ffffff; /* Alternate background */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    padding: 2rem 1.5rem;
+  }  

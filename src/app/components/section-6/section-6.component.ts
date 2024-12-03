@@ -10,28 +10,19 @@ import { Component } from '@angular/core';
 export class Section6Component {
   stories = [
     {
-      title: 'Here Is How We Reached Over 2 Million Children!',
-      description:
-        "Thank you for your unwavering support in transforming the lives of India's children. It's you who made it possible!",
-      buttonText: 'Know More',
-      image: 'assets/images/story1.jpg',
-      bgColor: '#FFA500' // Orange background color
+      title: 'Empowering Education in Rural Areas',
+      text: 'We recently launched an initiative to bring quality education to remote villages. Over 200 children have now joined school for the first time. Together, we’re breaking barriers and building dreams!',
+      image: 'https://via.placeholder.com/600x400',
     },
     {
-      title: 'Meet Our Change Makers Breaking Barriers!',
-      description:
-        'We share Nana’s story of resilience. Every effort counts to end period poverty.',
-      buttonText: 'Know More',
-      image: 'assets/images/story2.jpg',
-      bgColor: '#28A745' // Green background color
+      title: 'Environmental Sustainability Programs',
+      text: 'Our recent afforestation drive planted over 10,000 trees across arid regions, providing both shade and oxygen. Let\'s continue protecting our planet for future generations!',
+      image: 'https://via.placeholder.com/600x400',
     },
     {
-      title: 'Health Camps for Rural Areas',
-      description:
-        'Over 500 families benefited from our healthcare camps in remote areas.',
-      buttonText: 'Know More',
-      image: 'assets/images/story3.jpg',
-      bgColor: '#007BFF' // Blue background color
-    }
+      title: 'Vocational Training for Women',
+      text: 'Through our vocational programs, over 500 women are now financially independent, skilled in tailoring, handicrafts, and more. Empower women, empower the world!',
+      image: 'https://via.placeholder.com/600x400',
+    },
   ];
 }

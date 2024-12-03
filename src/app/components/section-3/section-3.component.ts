@@ -9,22 +9,24 @@ import { DonateComponent } from "../common/donate/donate.component";
   styleUrl: './section-3.component.css'
 })
 export class Section3Component {
-  whatWeDo = [
+  whatWeDoItems = [
     {
-      title: 'Education',
-      icon: 'assets/icons/education.svg',
+      title: 'Child Education',
+      imgSrc: 'https://via.placeholder.com/400x200',
+      altText: 'Child Education',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt commodo lacus.'
     },
     {
-      title: 'Health & Nutrition',
-      icon: 'assets/icons/health-nutrition.svg',
+      title: 'Healthcare Support',
+      imgSrc: 'https://via.placeholder.com/400x200',
+      altText: 'Healthcare Support',
+      description: 'Providing essential healthcare services to underserved communities for a better future.'
     },
     {
-      title: 'Safety & Protection',
-      icon: 'assets/icons/safety-protection.svg',
-    },
-    {
-      title: 'Child Participation',
-      icon: 'assets/icons/child-participation.svg',
-    },
+      title: 'Women Empowerment',
+      imgSrc: 'https://via.placeholder.com/400x200',
+      altText: 'Women Empowerment',
+      description: 'Empowering women with vocational training and educational programs to build independence.'
+    }
   ];
 }
