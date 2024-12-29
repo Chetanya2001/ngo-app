@@ -1,7 +1,7 @@
 /* Section Styling */
 .what-we-do-section {
   position: relative;
-  background-color: #fff6e8;
+  background-color: #FBEAD3;
   padding: 60px 20px;
   border-radius: 15px;
   overflow: hidden;
@@ -12,7 +12,7 @@
 .section-title {
   font-size: 28px;
   font-weight: 700;
-  color: #6c4e2f;
+  color: #000000;
   margin-bottom: 30px;
 }
 
@@ -48,4 +48,5 @@
 .card-title {
   font-size: 22px;
   font-weight: bold;
+  color: #000000;
 }

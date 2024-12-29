@@ -1,6 +1,6 @@
 /* Section Styling */
 .field-of-work-section {
-    background-color: #fff6e8;
+    background-color: #FBEAD3;
     padding: 40px 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -10,7 +10,7 @@
   .section-title {
     font-size: 24px;
     font-weight: 700;
-    color: #6c4e2f;
+    color: #000000;
     margin-bottom: 20px;
   }
   
@@ -28,7 +28,7 @@
   .card-title {
     font-size: 18px;
     font-weight: bold;
-    color: #6c4e2f;
+    color: #000000;
   }
   
   .card-img-top {
