@@ -1,53 +1,204 @@
 /* Section Styling */
 .stories-updates-section {
-    background: #FBEAD3;
-    padding: 60px 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #FBEAD3;
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Story Title */
+.story-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Story Text */
+.story-text {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.8;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #3c2a16;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+  background-color: #6c4e2f;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #ffcc80;
+}
+
+/* Media Queries */
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .stories-updates-section {
+    padding: 30px 15px; /* Reduced padding for smaller screens */
   }
-  
-  /* Section Title */
+
   .section-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 22px; /* Smaller title size */
+    margin-bottom: 30px; /* Reduced margin */
   }
-  
-  /* Story Title */
+
   .story-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 15px;
+    font-size: 18px; /* Smaller story title size */
   }
-  
-  /* Story Text */
+
   .story-text {
-    font-size: 16px;
-    color: #000000;
-    line-height: 1.8;
+    font-size: 14px; /* Smaller story text size */
   }
-  
-  /* Carousel Controls */
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    background-color: #3c2a16;
-    border-radius: 50%;
-    padding: 10px;
+    padding: 8px; /* Smaller carousel control buttons */
   }
-  
-  /* Carousel Indicators */
+
   .carousel-indicators button {
-    background-color: #6c4e2f;
+    width: 8px;
+    height: 8px; /* Smaller carousel indicators */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .stories-updates-section {
+    padding: 40px 18px; /* Adjusted padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Slightly larger title size */
+    margin-bottom: 35px; /* Increased margin */
+  }
+
+  .story-title {
+    font-size: 19px; /* Slightly larger story title size */
+  }
+
+  .story-text {
+    font-size: 15px; /* Slightly larger story text size */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 9px; /* Slightly larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 9px;
+    height: 9px; /* Slightly larger carousel indicators */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .stories-updates-section {
+    padding: 50px 20px; /* Default padding */
+  }
+
+  .section-title {
+    font-size: 26px; /* Default title size */
+    margin-bottom: 40px; /* Default margin */
+  }
+
+  .story-title {
+    font-size: 20px; /* Default story title size */
+  }
+
+  .story-text {
+    font-size: 16px; /* Default story text size */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 10px; /* Default carousel control buttons */
+  }
+
+  .carousel-indicators button {
     width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    height: 10px; /* Default carousel indicators */
   }
-  
-  .carousel-indicators .active {
-    background-color: #ffcc80;
+}
+
+/* Tablets and Medium devices (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .stories-updates-section {
+    padding: 55px 25px; /* Larger padding for tablets */
   }
-  
+
+  .section-title {
+    font-size: 28px; /* Larger title size */
+    margin-bottom: 45px; /* Larger margin */
+  }
+
+  .story-title {
+    font-size: 22px; /* Larger story title size */
+  }
+
+  .story-text {
+    font-size: 17px; /* Larger story text size */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 12px; /* Larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 12px;
+    height: 12px; /* Larger carousel indicators */
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1025px) {
+  .stories-updates-section {
+    padding: 60px 30px; /* Larger padding */
+  }
+
+  .section-title {
+    font-size: 32px; /* Larger title size */
+    margin-bottom: 50px; /* Larger margin */
+  }
+
+  .story-title {
+    font-size: 24px; /* Larger story title size */
+  }
+
+  .story-text {
+    font-size: 18px; /* Larger story text size */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 15px; /* Larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 14px;
+    height: 14px; /* Larger carousel indicators */
+  }
+}

@@ -48,42 +48,235 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Optional: Add a subtle decorative element */
-.donation-section::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 150px;
-  height: 150px;
-  background: #FBEAD3;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.donation-section::after {
-  content: "";
-  position: absolute;
-  bottom: -50px;
-  left: -50px;
-  width: 200px;
-  height: 200px;
-  background: #FBEAD3;
-  border-radius: 50%;
-  z-index: 1;
-}
+/* Removed quarter-circle decorations */
 
 /* Ensure responsiveness */
-@media (max-width: 768px) {
+
+/* Small devices (Mobile) */
+@media (max-width: 576px) {
+  .donation-section {
+    padding: 30px 15px; /* Reduce padding for small screens */
+  }
+
   .section-title {
-    font-size: 22px;
+    font-size: 22px; /* Smaller font for section title */
+    margin-bottom: 15px; /* Reduced margin */
   }
 
   .section-subtitle {
-    font-size: 14px;
+    font-size: 14px; /* Smaller subtitle */
+    margin-bottom: 20px; /* Reduced margin */
   }
 
-  .btn-outline-warning {
-    font-size: 14px;
+  .row {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 10px 15px; /* Adjust button size */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+/* Medium devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .donation-section {
+    padding: 35px 20px; /* Slightly reduced padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 18px;
+  }
+
+  .section-subtitle {
+    font-size: 15px; /* Adjust subtitle font size */
+    margin-bottom: 25px; /* Adjust margin */
+  }
+
+  .row {
+    gap: 12px; /* Slightly reduced gap between buttons */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 12px 18px; /* Adjust button size */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .donation-section {
+    padding: 25px 15px; /* Reduced padding for compact layout */
+  }
+
+  .section-title {
+    font-size: 20px; /* Smaller font size */
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 14px; /* Smaller subtitle font size */
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center content vertically if needed */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 10px 15px; /* Smaller button padding */
+    font-size: 0.9rem; /* Smaller button font size */
+    width: 100%; /* Full width for smaller screens */
+    max-width: 250px; /* Optional: Limit max width for a better look */
+    margin: 0 auto; /* Horizontally center the button */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .donation-section {
+    padding: 30px 20px; /* Slightly more padding */
+  }
+
+  .section-title {
+    font-size: 22px; /* Slightly smaller font size */
+    margin-bottom: 18px;
+  }
+
+  .section-subtitle {
+    font-size: 15px; /* Adjust subtitle font size */
+    margin-bottom: 25px;
+  }
+
+  .row {
+    gap: 12px; /* Slightly reduced gap between buttons */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 12px 18px; /* Adjust button size */
+    font-size: 1rem; /* Default button font size */
+    width: 100%; /* Make button take full width */
+    max-width: 250px; /* Limit max-width for better appearance */
+    margin: 0 auto; /* Horizontally center the buttons */
+  }
+}
+/* Devices between 475px to 576px */
+@media (min-width: 475px) and (max-width: 576px) {
+  .donation-section {
+    padding: 35px 20px; /* Slightly increased padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 18px;
+  }
+
+  .section-subtitle {
+    font-size: 15px; /* Adjust subtitle font size */
+    margin-bottom: 25px;
+  }
+
+  .row {
+    gap: 15px; /* Default gap */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 12px 18px; /* Adjust button size */
+    font-size: 1rem; /* Default font size */
+    width: 100%; /* Make button take full width */
+    max-width: 300px; /* Limit max-width for better appearance */
+    margin: 0 auto; /* Horizontally center the buttons */
+  }
+}
+
+/* Devices between 425px to 475px */
+@media (min-width: 425px) and (max-width: 475px) {
+  .donation-section {
+    padding: 30px 20px; /* Slightly more padding */
+  }
+
+  .section-title {
+    font-size: 22px; /* Slightly smaller font size */
+    margin-bottom: 18px;
+  }
+
+  .section-subtitle {
+    font-size: 15px; /* Adjust subtitle font size */
+    margin-bottom: 25px;
+  }
+
+  .row {
+    gap: 12px; /* Slightly reduced gap between buttons */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 12px 18px; /* Adjust button size */
+    font-size: 1rem; /* Default button font size */
+    width: 100%; /* Make button take full width */
+    max-width: 250px; /* Limit max-width for better appearance */
+    margin: 0 auto; /* Horizontally center the buttons */
+  }
+}
+
+
+/* Large devices (Desktops) */
+@media (min-width: 769px) {
+  .donation-section {
+    padding: 40px 20px; /* Default padding */
+  }
+
+  .section-title {
+    font-size: 28px; /* Default title size */
+    margin-bottom: 20px; /* Default margin */
+  }
+
+  .section-subtitle {
+    font-size: 16px; /* Default subtitle size */
+    margin-bottom: 30px; /* Default margin */
+  }
+
+  .row {
+    gap: 15px; /* Default gap */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 15px 20px; /* Default button size */
+    font-size: 1.1rem; /* Default font size */
+  }
+}
+
+/* Extra Large devices (Larger Desktops) */
+@media (min-width: 1200px) {
+  .donation-section {
+    padding: 50px 30px; /* Larger padding for larger screens */
+  }
+
+  .section-title {
+    font-size: 32px; /* Larger font for large screens */
+    margin-bottom: 25px; /* Adjust margin */
+  }
+
+  .section-subtitle {
+    font-size: 18px; /* Larger subtitle font size */
+    margin-bottom: 35px; /* Adjust margin */
+  }
+
+  .row {
+    gap: 20px; /* Larger gap for button spacing */
+  }
+
+  .select-amount, .btn-outline-warning {
+    padding: 15px 25px; /* Larger button size */
+    font-size: 1.2rem; /* Larger font size */
   }
 }

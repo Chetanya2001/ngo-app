@@ -1,39 +1,160 @@
 /* Section Styling */
 .field-of-work-section {
-    background-color: #FBEAD3;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #FBEAD3;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .field-of-work-section {
+    padding: 25px 15px; /* Reduce padding for smaller screens */
   }
-  
-  /* Section Title */
+
   .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom: 20px;
+    font-size: 20px; /* Adjust title size */
+    margin-bottom: 15px; /* Reduced margin */
   }
-  
-  /* Card Styling */
+
   .card {
-    border: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px; /* Increased bottom margin for cards */
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
+    font-size: 16px; /* Smaller title */
   }
-  
+
   .card-img-top {
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 120px; /* Smaller image size */
   }
-  
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .field-of-work-section {
+    padding: 30px 18px; /* Adjust padding for this range */
+  }
+
+  .section-title {
+    font-size: 22px; /* Slightly larger title */
+    margin-bottom: 18px; /* Adjust margin */
+  }
+
+  .card {
+    margin-bottom: 18px; /* Adjust card margin */
+  }
+
+  .card-title {
+    font-size: 17px; /* Slightly larger title */
+  }
+
+  .card-img-top {
+    height: 130px; /* Adjust image size */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .field-of-work-section {
+    padding: 35px 20px; /* Adjust padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Default title size */
+    margin-bottom: 20px; /* Default margin */
+  }
+
+  .card {
+    margin-bottom: 20px; /* Adjust card margin */
+  }
+
+  .card-title {
+    font-size: 18px; /* Default title size */
+  }
+
+  .card-img-top {
+    height: 140px; /* Adjust image size */
+  }
+}
+
+/* Medium devices (Tablets) between 577px to 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  .field-of-work-section {
+    padding: 40px 25px; /* Larger padding for tablets */
+  }
+
+  .section-title {
+    font-size: 26px; /* Slightly larger title */
+    margin-bottom: 25px; /* Increased margin */
+  }
+
+  .card {
+    margin-bottom: 25px; /* Adjust card margin */
+  }
+
+  .card-title {
+    font-size: 19px; /* Larger card title */
+  }
+
+  .card-img-top {
+    height: 160px; /* Larger image size */
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1025px) {
+  .field-of-work-section {
+    padding: 50px 30px; /* Larger padding */
+  }
+
+  .section-title {
+    font-size: 28px; /* Larger title */
+    margin-bottom: 30px; /* Larger margin */
+  }
+
+  .card {
+    margin-bottom: 30px; /* Larger card margin */
+  }
+
+  .card-title {
+    font-size: 20px; /* Larger card title */
+  }
+
+  .card-img-top {
+    height: 180px; /* Larger image size */
+  }
+}

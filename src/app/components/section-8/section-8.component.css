@@ -1,64 +1,232 @@
 /* Section Styling */
 .awards-section {
-    background: linear-gradient(to right, #fef9f6, #fdf4e4);
-    padding: 60px 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #fef9f6, #fdf4e4);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+/* Award Card */
+.award-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Award Image */
+.award-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Award Title */
+.award-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.heading {
+  color: #000000;
+}
+
+/* Award Year */
+.award-year {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Award Description */
+.award-description {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .awards-section {
+    padding: 40px 15px; /* Adjusted padding for small devices */
   }
-  
-  /* Section Title */
+
   .section-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
+    font-size: 22px; /* Smaller section title */
+    margin-bottom: 30px; /* Reduced margin */
   }
-  
-  /* Award Card */
+
   .award-card {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px; /* Reduced padding inside award cards */
   }
-  
-  .award-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  .award-title {
+    font-size: 16px; /* Smaller award title */
   }
-  
-  /* Award Image */
+
+  .award-year {
+    font-size: 14px; /* Smaller award year text */
+  }
+
+  .award-description {
+    font-size: 12px; /* Smaller award description */
+  }
+
+  .award-image {
+    width: 60px;
+    height: 60px; /* Smaller award image */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .awards-section {
+    padding: 45px 18px; /* Adjusted padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Slightly larger section title */
+    margin-bottom: 35px; /* Increased margin */
+  }
+
+  .award-card {
+    padding: 25px; /* Slightly larger padding */
+  }
+
+  .award-title {
+    font-size: 17px; /* Slightly larger award title */
+  }
+
+  .award-year {
+    font-size: 15px; /* Slightly larger award year text */
+  }
+
+  .award-description {
+    font-size: 13px; /* Slightly larger award description */
+  }
+
+  .award-image {
+    width: 70px;
+    height: 70px; /* Slightly larger award image */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .awards-section {
+    padding: 50px 20px; /* Default padding for small tablets */
+  }
+
+  .section-title {
+    font-size: 26px; /* Default section title */
+    margin-bottom: 40px; /* Default margin */
+  }
+
+  .award-card {
+    padding: 30px; /* Default padding for award cards */
+  }
+
+  .award-title {
+    font-size: 18px; /* Default award title */
+  }
+
+  .award-year {
+    font-size: 16px; /* Default award year text */
+  }
+
+  .award-description {
+    font-size: 14px; /* Default award description */
+  }
+
   .award-image {
     width: 80px;
-    height: 80px;
-    object-fit: contain;
+    height: 80px; /* Default award image size */
   }
-  
-  /* Award Title */
+}
+
+/* Tablets and Medium devices (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .awards-section {
+    padding: 55px 25px; /* Larger padding for tablets */
+  }
+
+  .section-title {
+    font-size: 28px; /* Larger section title */
+    margin-bottom: 45px; /* Larger margin */
+  }
+
+  .award-card {
+    padding: 35px; /* Larger padding inside award cards */
+  }
+
   .award-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 10px;
+    font-size: 20px; /* Larger award title */
   }
-  .heading {
-    color:#000000;
-  }
-  /* Award Year */
+
   .award-year {
-    font-size: 16px;
-    color: black;
-    margin-bottom: 10px;
-    font-style: italic;
+    font-size: 17px; /* Larger award year text */
   }
-  
-  /* Award Description */
+
   .award-description {
-    font-size: 14px;
-    color: #000000;
-    line-height: 1.6;
+    font-size: 15px; /* Larger award description */
   }
-  
+
+  .award-image {
+    width: 90px;
+    height: 90px; /* Larger award image */
+  }
+}
+
+/* Large devices (Desktops and above 1025px) */
+@media (min-width: 1025px) {
+  .awards-section {
+    padding: 60px 30px; /* Maximum padding for desktops */
+  }
+
+  .section-title {
+    font-size: 32px; /* Larger section title */
+    margin-bottom: 50px; /* Larger margin */
+  }
+
+  .award-card {
+    padding: 40px; /* Maximum padding for award cards */
+  }
+
+  .award-title {
+    font-size: 22px; /* Larger award title */
+  }
+
+  .award-year {
+    font-size: 18px; /* Larger award year text */
+  }
+
+  .award-description {
+    font-size: 16px; /* Larger award description */
+  }
+
+  .award-image {
+    width: 100px;
+    height: 100px; /* Maximum award image size */
+  }
+}

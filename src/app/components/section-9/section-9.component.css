@@ -1,3 +1,136 @@
 .heading{
     color: black
 }
+/* Section Styling */
+.container {
+    background-color: #FAEEDF;
+  }
+  
+  /* Background Image and Heading */
+  .text-center {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  /* Adjust Heading for smaller screens */
+  .heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Input Fields */
+  .form-control,
+  .form-select {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (320px to 375px) */
+  @media (max-width: 375px) {
+    .heading {
+      font-size: 22px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .form-control,
+    .form-select {
+      font-size: 14px;
+    }
+  
+    .d-flex img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  /* Devices between 376px and 576px (Small Tablets) */
+  @media (min-width: 376px) and (max-width: 576px) {
+    .heading {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 30px;
+    }
+  
+    .form-control,
+    .form-select {
+      font-size: 15px;
+    }
+  
+    .d-flex img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 14px;
+    }
+  }
+  
+  /* Tablets and Medium Devices (577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .heading {
+      font-size: 26px;
+    }
+  
+    .container {
+      padding: 40px;
+    }
+  
+    .form-control,
+    .form-select {
+      font-size: 16px;
+    }
+  
+    .d-flex img {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .btn {
+      font-size: 18px;
+      padding: 16px;
+    }
+  }
+  
+  /* Large devices (Desktops and above 1025px) */
+  @media (min-width: 1025px) {
+    .heading {
+      font-size: 32px;
+    }
+  
+    .container {
+      padding: 60px;
+    }
+  
+    .form-control,
+    .form-select {
+      font-size: 18px;
+    }
+  
+    .d-flex img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .btn {
+      font-size: 20px;
+      padding: 18px;
+    }
+  }
+  

@@ -1,30 +1,126 @@
 /* General Container Styling */
 .page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+app-navbar {
+  margin-bottom: 20px; /* Space below the navbar */
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 1.5rem; /* Add generous padding */
+  margin: 2rem 0; /* Add spacing between sections */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Alternate Background Colors for Sections */
+.section:nth-child(even) {
+  background-color: #ffffff; /* Alternate background */
+}
+
+/* Footer Styling */
+.footer {
+  padding: 2rem 1.5rem;
+}
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .page-container {
+    padding: 0 10px; /* Add padding to avoid edge contact on small screens */
   }
-  
-  /* Navbar Styling */
-  app-navbar {
-    margin-bottom: 20px; /* Space below the navbar */
-  }
-  
-  /* Section Styling */
+
   .section {
-    padding: 4rem 1.5rem; /* Add generous padding */
-    margin: 2rem 0; /* Add spacing between sections */
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2rem 1rem; /* Reduce padding for small screens */
+    margin: 1rem 0; /* Reduce spacing between sections */
   }
-  
-  /* Alternate Background Colors for Sections */
-  .section:nth-child(even) {
-    background-color: #ffffff; /* Alternate background */
-  }
-  
-  /* Footer Styling */
+
   .footer {
-    padding: 2rem 1.5rem;
-  }  
+    padding: 1.5rem 1rem; /* Reduce footer padding */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .page-container {
+    padding: 0 15px; /* Slight padding for better fit */
+  }
+
+  .section {
+    padding: 2.5rem 1.2rem; /* Slightly increased padding */
+    margin: 1.5rem 0; /* Adjust spacing between sections */
+  }
+
+  .footer {
+    padding: 1.8rem 1.2rem; /* Increased footer padding */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .page-container {
+    padding: 0 20px; /* More padding */
+  }
+
+  .section {
+    padding: 3rem 1.5rem; /* Adjust padding for mid-sized screens */
+    margin: 2rem 0; /* Adjust spacing between sections */
+  }
+
+  .footer {
+    padding: 2rem 1.5rem; /* Footer padding adjusted */
+  }
+}
+
+/* Medium devices (Tablets) between 577px to 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  .section {
+    padding: 3.5rem 1.8rem; /* Adjust padding for larger tablets */
+    margin: 2.5rem 0; /* Adjust spacing between sections */
+  }
+
+  .footer {
+    padding: 2.5rem 1.8rem; /* Adjust footer padding */
+  }
+}
+
+/* Devices between 769px to 1024px (Small Laptops/Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section {
+    padding: 4rem 2rem; /* Increased padding for larger tablets */
+    margin: 3rem 0; /* Increased spacing between sections */
+  }
+
+  .footer {
+    padding: 3rem 2rem; /* Larger footer padding */
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .section {
+    padding: 4rem 2.5rem; /* Larger padding */
+    margin: 3.5rem 0; /* Increased spacing */
+  }
+
+  .footer {
+    padding: 3rem 2.5rem; /* Increased footer padding */
+  }
+}
+
+/* Extra Large devices (Larger Desktops) */
+@media (min-width: 1200px) {
+  .section {
+    padding: 5rem 3rem; /* Larger padding for larger screens */
+    margin: 4rem 0; /* Increased spacing between sections */
+  }
+
+  .footer {
+    padding: 4rem 3rem; /* Increased footer padding */
+  }
+}

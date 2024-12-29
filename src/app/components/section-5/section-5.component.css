@@ -103,3 +103,170 @@
   height: 200px;
   background: rgba(255, 224, 189, 0.4);
 }
+
+/* Media Queries */
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .contributors-section {
+    padding: 25px 15px; /* Reduced padding for smaller screens */
+  }
+
+  .section-title {
+    font-size: 22px; /* Adjusted title size */
+    margin-bottom: 30px; /* Reduced margin */
+  }
+
+  .contributor-card {
+    padding: 15px 10px; /* Reduced padding */
+  }
+
+  .contributor-name {
+    font-size: 18px; /* Reduced font size */
+  }
+
+  .contributor-role {
+    font-size: 14px; /* Reduced font size */
+  }
+
+  .contributor-message {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .contributor-image {
+    width: 80px;
+    height: 80px; /* Reduced image size */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .contributors-section {
+    padding: 30px 18px; /* Adjusted padding for this range */
+  }
+
+  .section-title {
+    font-size: 24px; /* Slightly larger title size */
+    margin-bottom: 35px; /* Increased margin */
+  }
+
+  .contributor-card {
+    padding: 18px 12px; /* Slightly larger padding */
+  }
+
+  .contributor-name {
+    font-size: 19px; /* Slightly larger font size */
+  }
+
+  .contributor-role {
+    font-size: 15px; /* Slightly larger font size */
+  }
+
+  .contributor-message {
+    font-size: 13px; /* Slightly larger font size */
+  }
+
+  .contributor-image {
+    width: 90px;
+    height: 90px; /* Slightly larger image size */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .contributors-section {
+    padding: 35px 20px; /* Increased padding for this range */
+  }
+
+  .section-title {
+    font-size: 26px; /* Default title size */
+    margin-bottom: 40px; /* Default margin */
+  }
+
+  .contributor-card {
+    padding: 20px 15px; /* Default padding */
+  }
+
+  .contributor-name {
+    font-size: 20px; /* Default font size */
+  }
+
+  .contributor-role {
+    font-size: 16px; /* Default font size */
+  }
+
+  .contributor-message {
+    font-size: 14px; /* Default font size */
+  }
+
+  .contributor-image {
+    width: 100px;
+    height: 100px; /* Default image size */
+  }
+}
+
+/* Tablets and Medium devices (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .contributors-section {
+    padding: 40px 25px; /* Larger padding for tablets */
+  }
+
+  .section-title {
+    font-size: 28px; /* Larger title size */
+    margin-bottom: 45px; /* Larger margin */
+  }
+
+  .contributor-card {
+    padding: 20px 18px; /* Slightly larger padding */
+  }
+
+  .contributor-name {
+    font-size: 22px; /* Larger font size */
+  }
+
+  .contributor-role {
+    font-size: 17px; /* Larger font size */
+  }
+
+  .contributor-message {
+    font-size: 15px; /* Larger font size */
+  }
+
+  .contributor-image {
+    width: 110px;
+    height: 110px; /* Larger image size */
+  }
+}
+
+/* Large devices (Desktops) */
+@media (min-width: 1025px) {
+  .contributors-section {
+    padding: 50px 30px; /* Larger padding */
+  }
+
+  .section-title {
+    font-size: 32px; /* Larger title size */
+    margin-bottom: 50px; /* Larger margin */
+  }
+
+  .contributor-card {
+    padding: 25px 20px; /* Larger padding */
+  }
+
+  .contributor-name {
+    font-size: 24px; /* Larger font size */
+  }
+
+  .contributor-role {
+    font-size: 18px; /* Larger font size */
+  }
+
+  .contributor-message {
+    font-size: 16px; /* Larger font size */
+  }
+
+  .contributor-image {
+    width: 120px;
+    height: 120px; /* Larger image size */
+  }
+}

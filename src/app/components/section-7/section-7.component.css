@@ -74,3 +74,195 @@
 .carousel-indicators .active {
   background-color: #ffcc80;
 }
+
+/* Media Queries */
+
+/* Smallest devices (320px to 375px) */
+@media (min-width: 320px) and (max-width: 375px) {
+  .testimonials-section {
+    padding: 40px 15px; /* Adjusted padding for small devices */
+  }
+
+  .section-title {
+    font-size: 22px; /* Smaller section title */
+    margin-bottom: 30px; /* Reduced margin */
+  }
+
+  .testimonial-item {
+    padding: 20px; /* Reduced padding inside testimonial items */
+  }
+
+  .testimonial-text {
+    font-size: 14px; /* Smaller text size for testimonials */
+  }
+
+  .client-name {
+    font-size: 16px; /* Smaller client name */
+  }
+
+  .client-role {
+    font-size: 12px; /* Smaller client role text */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 8px; /* Smaller carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px; /* Smaller carousel indicators */
+  }
+}
+
+/* Devices between 375px to 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .testimonials-section {
+    padding: 45px 18px; /* Adjusted padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Slightly larger title */
+    margin-bottom: 35px; /* Increased margin */
+  }
+
+  .testimonial-item {
+    padding: 25px; /* Slightly larger padding inside testimonial items */
+  }
+
+  .testimonial-text {
+    font-size: 15px; /* Slightly larger testimonial text */
+  }
+
+  .client-name {
+    font-size: 17px; /* Slightly larger client name */
+  }
+
+  .client-role {
+    font-size: 13px; /* Slightly larger client role text */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 9px; /* Slightly larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 9px;
+    height: 9px; /* Slightly larger carousel indicators */
+  }
+}
+
+/* Devices between 425px to 576px */
+@media (min-width: 425px) and (max-width: 576px) {
+  .testimonials-section {
+    padding: 50px 20px; /* Default padding */
+  }
+
+  .section-title {
+    font-size: 26px; /* Default section title */
+    margin-bottom: 40px; /* Default margin */
+  }
+
+  .testimonial-item {
+    padding: 30px; /* Default padding */
+  }
+
+  .testimonial-text {
+    font-size: 16px; /* Default testimonial text size */
+  }
+
+  .client-name {
+    font-size: 18px; /* Default client name */
+  }
+
+  .client-role {
+    font-size: 14px; /* Default client role */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 10px; /* Default carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px; /* Default carousel indicators */
+  }
+}
+
+/* Tablets and Medium devices (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .testimonials-section {
+    padding: 55px 25px; /* Larger padding for tablets */
+  }
+
+  .section-title {
+    font-size: 28px; /* Larger section title */
+    margin-bottom: 45px; /* Larger margin */
+  }
+
+  .testimonial-item {
+    padding: 35px; /* Larger padding for testimonial items */
+  }
+
+  .testimonial-text {
+    font-size: 17px; /* Larger testimonial text */
+  }
+
+  .client-name {
+    font-size: 20px; /* Larger client name */
+  }
+
+  .client-role {
+    font-size: 15px; /* Larger client role text */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 12px; /* Larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 12px;
+    height: 12px; /* Larger carousel indicators */
+  }
+}
+
+/* Large devices (Desktops and above 1025px) */
+@media (min-width: 1025px) {
+  .testimonials-section {
+    padding: 60px 30px; /* Maximum padding for desktops */
+  }
+
+  .section-title {
+    font-size: 32px; /* Larger section title */
+    margin-bottom: 50px; /* Larger margin */
+  }
+
+  .testimonial-item {
+    padding: 40px; /* Maximum padding for testimonial items */
+  }
+
+  .testimonial-text {
+    font-size: 18px; /* Larger testimonial text */
+  }
+
+  .client-name {
+    font-size: 22px; /* Larger client name */
+  }
+
+  .client-role {
+    font-size: 16px; /* Larger client role text */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 15px; /* Larger carousel control buttons */
+  }
+
+  .carousel-indicators button {
+    width: 14px;
+    height: 14px; /* Larger carousel indicators */
+  }
+}
