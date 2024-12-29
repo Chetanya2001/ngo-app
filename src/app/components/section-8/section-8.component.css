@@ -10,7 +10,7 @@
   .section-title {
     font-size: 28px;
     font-weight: bold;
-    color: #6c4e2f;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 40px;
@@ -41,14 +41,16 @@
   .award-title {
     font-size: 18px;
     font-weight: bold;
-    color: #3c2a16;
+    color: #000000;
     margin-bottom: 10px;
   }
-  
+  .heading {
+    color:#000000;
+  }
   /* Award Year */
   .award-year {
     font-size: 16px;
-    color: #9b8d7e;
+    color: black;
     margin-bottom: 10px;
     font-style: italic;
   }
@@ -56,7 +58,7 @@
   /* Award Description */
   .award-description {
     font-size: 14px;
-    color: #6c4e2f;
+    color: #000000;
     line-height: 1.6;
   }
   

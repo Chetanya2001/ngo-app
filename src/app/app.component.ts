@@ -16,7 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   imports: [NavbarComponent, Section1Component, Section2Component, Section3Component, Section4Component, Section5Component,
-    Section6Component, Section7Component, Section8Component, FooterComponent,Section9Component, Section10Component],
+    Section6Component, Section7Component, Section8Component, FooterComponent,Section9Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   standalone:true

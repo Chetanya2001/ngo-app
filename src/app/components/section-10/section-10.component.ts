@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './section-10.component.css'
 })
 export class Section10Component {
-
+data = {
+  name:"chetanya",
+  address: "Agra, Uttarpradesh",
+  phone:9568486263
+}
 }

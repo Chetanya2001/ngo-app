@@ -14,7 +14,7 @@ export class Section9Component {
 
   constructor(private fb: FormBuilder) {
     this.donationForm = this.fb.group({
-      amount: [2000, [Validators.required, Validators.min(1)]],
+      amount: [2000, [Validators.required, Validators.min(500)]],
       fullName: ['', Validators.required],
       dob: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -22,7 +22,7 @@ export class Section9Component {
       address: ['', Validators.required],
       pincode: ['', Validators.required],
       city: ['', Validators.required],
-      state: ['Uttar Pradesh', Validators.required],
+      state: ['', Validators.required],
       pan: ['', Validators.required],
       declaration: [false, Validators.requiredTrue],
     });

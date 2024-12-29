@@ -1,6 +1,6 @@
 /* Section Styling */
 .donation-section {
-  background: linear-gradient(135deg, #fdf4e4, #ffffff);
+  background: #FBEAD3;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 40px 20px;
@@ -12,7 +12,7 @@
 .section-title {
   font-size: 28px;
   font-weight: 700;
-  color: #6c4e2f;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
@@ -21,7 +21,7 @@
 /* Section Subtitle */
 .section-subtitle {
   font-size: 16px;
-  color: #9b8d7e;
+  color: #000000;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -35,7 +35,7 @@
 .btn-outline-warning:hover {
   background-color: #5e4d07;
   color: #ffffff;
-  border-color: #5e4d07;
+  border-color: #000000;
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
 }

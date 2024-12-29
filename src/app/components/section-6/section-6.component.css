@@ -1,6 +1,6 @@
 /* Section Styling */
 .stories-updates-section {
-    background: linear-gradient(to bottom, #fff6e8, #fef2dd);
+    background: #FBEAD3;
     padding: 60px 20px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -10,7 +10,7 @@
   .section-title {
     font-size: 28px;
     font-weight: bold;
-    color: #6c4e2f;
+    color: #000000;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -20,14 +20,14 @@
   .story-title {
     font-size: 20px;
     font-weight: bold;
-    color: #3c2a16;
+    color: #000000;
     margin-bottom: 15px;
   }
   
   /* Story Text */
   .story-text {
     font-size: 16px;
-    color: #6c4e2f;
+    color: #000000;
     line-height: 1.8;
   }
   

@@ -1,6 +1,6 @@
 /* Section Styling */
 .testimonials-section {
-  background: linear-gradient(to bottom, #fff6e8, #fef2dd);
+  background: #FBEAD3;
   padding: 60px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -10,7 +10,7 @@
 .section-title {
   font-size: 28px;
   font-weight: bold;
-  color: #6c4e2f;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 40px;
@@ -32,7 +32,7 @@
 /* Testimonial Text */
 .testimonial-text {
   font-size: 16px;
-  color: #6c4e2f;
+  color: #000000;
   line-height: 1.8;
   font-style: italic;
 }
@@ -41,13 +41,13 @@
 .client-name {
   font-size: 18px;
   font-weight: bold;
-  color: #3c2a16;
+  color: #000000;
 }
 
 /* Client Role */
 .client-role {
   font-size: 14px;
-  color: #9b8d7e;
+  color: #000000;
 }
 
 /* Carousel Controls */

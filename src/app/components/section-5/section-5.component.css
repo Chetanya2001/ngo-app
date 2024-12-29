@@ -1,6 +1,6 @@
 /* Section Styling */
 .contributors-section {
-  background: linear-gradient(to bottom, #fff6e8, #fef2dd);
+  background: #FBEAD3;
   padding: 50px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -11,7 +11,7 @@
 .section-title {
   font-size: 28px;
   font-weight: bold;
-  color: #6c4e2f;
+  color: #000000;
   margin-bottom: 40px;
 }
 
@@ -63,19 +63,19 @@
 .contributor-name {
   font-size: 20px;
   font-weight: bold;
-  color: #6c4e2f;
+  color: #000000;
 }
 
 .contributor-role {
   font-size: 16px;
   font-weight: 600;
-  color: #a67c52;
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .contributor-message {
   font-size: 14px;
-  color: #6c4e2f;
+  color: #000000;
   line-height: 1.5;
 }
 

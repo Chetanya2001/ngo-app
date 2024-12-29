@@ -1,9 +1,20 @@
 <div class="container py-4" style="background-color: #FAEEDF;">
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <h2 class="text-center mb-4">Donate For Children & Save Tax</h2>
-        <div class="text-center mb-4">
-          <app-donate></app-donate>
+        <div
+          class="text-center mb-4 p-4"
+          style="
+            background-image: url('../../../assets/img4.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 10px;
+          "
+        >
+          <h2 class="text-center mb-4 heading">Donate For Children & Save Tax</h2>
+          <div class="text-center mb-4">
+            <app-donate></app-donate>
+          </div>
         </div>
         
         <form [formGroup]="donationForm" (ngSubmit)="onSubmit()">
@@ -17,7 +28,7 @@
                 formControlName="amount"
                 placeholder="2000"
               />
-              <span class="input-group-text">$</span>
+              <span class="input-group-text">&#8377;</span>
             </div>
           </div>
   
@@ -90,7 +101,7 @@
             <img src="assets/google-pay.png" alt="Google Pay" height="32" />
           </div>
   
-          <button type="submit" class="btn btn-lg w-100" style="background-color: #DB8C1D; color: white;">Continue To Payment</button>
+          <button type="submit" class="btn btn-lg w-100" style="background-color: #DB8C1D; color:#000000; font-weight: 600;">Continue To Payment</button>
         </form>
       </div>
     </div>
