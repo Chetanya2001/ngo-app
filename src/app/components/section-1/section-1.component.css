@@ -33,16 +33,16 @@
 
 /* Button Customizations (if needed for hover effects) */
 .btn-outline-warning:hover {
-  background-color: #ffcc00;
+  background-color: #5e4d07;
   color: #ffffff;
-  border-color: #ffcc00;
+  border-color: #5e4d07;
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
 }
 
 /* Optional: Add a subtle decorative element */
 .donation-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50px;
   right: -50px;
@@ -54,7 +54,7 @@
 }
 
 .donation-section::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -50px;
   left: -50px;

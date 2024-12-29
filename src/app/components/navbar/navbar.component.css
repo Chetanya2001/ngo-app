@@ -1,131 +1,128 @@
 /* Navbar Container */
 .custom-navbar {
-    background: linear-gradient(to right, #f5f5f5, #ffffff);
-    border-bottom: 3px solid rgba(255, 204, 0, 0.3);
-    padding: 15px 30px;
-    border-radius: 0 0 20px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1030;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(to right, #f5f5f5, #ffffff);
+  border-bottom: 3px solid rgba(255, 204, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 0 0 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Brand Logo and Name */
+.navbar-logo {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6c4e2f;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: color 0.3s ease;
+}
+
+.brand-name:hover {
+  color: #5e4d07;
+}
+
+/* Navbar Toggler */
+.custom-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #6c4e2f;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #6c4e2f;
+  border-radius: 2px;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #6c4e2f;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #5e4d07;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.custom-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5e4d07;
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+.custom-btn:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Spacing and Gaps */
+.navbar-nav {
+  gap: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .navbar .navbar-logo {
+    width: 35px;
   }
-  
-  /* Brand Logo and Name */
-  .navbar-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .navbar .brand-name {
+    font-size: 0.9rem;
   }
-  
-  .brand-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #6c4e2f;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    transition: color 0.3s ease;
-  }
-  
-  .brand-name:hover {
-    color: #ffcc00;
-  }
-  
-  /* Navbar Toggler */
-  .custom-toggler {
-    border: none;
-    outline: none;
-  }
-  
-  .navbar-toggler-icon {
-    width: 30px;
-    height: 3px;
-    background-color: #6c4e2f;
-    border-radius: 2px;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .navbar-toggler-icon::before,
-  .navbar-toggler-icon::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #6c4e2f;
-    border-radius: 2px;
-  }
-  
-  .navbar-toggler-icon::before {
-    top: -8px;
-  }
-  
-  .navbar-toggler-icon::after {
-    top: 8px;
-  }
-  
-  /* Navbar Links */
-  .nav-link {
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: #6c4e2f;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-link:hover,
-  .nav-link.active {
-    color: #ffcc00;
-    text-decoration: underline;
-    font-weight: 600;
-  }
-  
-  /* Button Styling */
-  .custom-btn {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #ffcc00;
-    border-radius: 25px;
-    padding: 0.7rem 1.5rem;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
-  }
-  
-  .custom-btn:hover {
-    background-color: #e6b800;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
-  }
-  
-  /* Spacing and Gaps */
+
   .navbar-nav {
-    gap: 20px;
+    gap: 8px;
   }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 576px) {
-    .navbar .navbar-logo {
-      width: 35px;
-    }
-  
-    .navbar .brand-name {
-      font-size: 0.9rem;
-    }
-  
-    .navbar-nav {
-      gap: 8px;
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 0.8rem;
-    }
-  
-    .navbar .custom-btn {
-      font-size: 0.8rem;
-      padding: 5px 10px;
-    }
+
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
   }
-  
+
+  .navbar .custom-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
