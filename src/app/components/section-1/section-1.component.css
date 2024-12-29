@@ -40,6 +40,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.select-amount {
+  background-color: #5e4d07;
+  color: #ffffff;
+  border-color: #5e4d07;
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+
 /* Optional: Add a subtle decorative element */
 .donation-section::before {
   content: "";
